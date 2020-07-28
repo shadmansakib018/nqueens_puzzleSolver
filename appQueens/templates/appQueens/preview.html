@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Solution</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'appQueens/style2.css' %}">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Pacifico" rel="stylesheet">
+
+</head>
+<body>
+	<header>
+		<h1> Solution to {{num}}-Queens puzzle</h1>
+	</header>
+	<div class="grid-container">
+		<div class="border">
+		{% for i in solution %}
+		<div class="row">
+			{% for j in numrange %}
+				{% if forloop.counter0 == i %}
+					<div class="item dark" style='font-size:33px'>&#9819;</div>
+				{% else %}
+					<div class="item"></div>
+				{% endif %}
+			{% endfor %}
+		</div>
+		{% endfor %}
+		</div>
+	</div>	
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+	background-color: #d9d9d9;
+	
+}
+header{
+	text-align: center;
+	font-family: 'Pacifico';
+}
+.grid-container{
+	display: grid;
+	grid-gap: 0px;
+	justify-content: center;
+}
+.border{
+	border: 15px solid #333;
+	background-color: #333;
+}
+.item{
+  	display: flex;
+  	justify-content: center;
+  	align-content: center;
+  	flex-direction: column;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+  	border-radius: 3px;
+  	background-color:#f4f4e9;
+}
+.row{
+	display: flex;
+}
+.dark{
+	background-color:#c4c4bb;
+	border-radius: 5px;
+}
