@@ -6,6 +6,11 @@ header{
 	text-align: center;
 	font-family: 'Pacifico';
 }
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+}
 .grid-container{
 	display: grid;
 	grid-gap: 0px;
@@ -33,4 +38,18 @@ header{
 .dark{
 	background-color:#c4c4bb;
 	border-radius: 5px;
+	font-size: 33px;
 }
+@media only screen and (max-width: 600px) {
+	.item{
+		width: 30px;
+		height: 30px;
+	}
+	.dark{
+		border-radius: 2px;
+		font-size:22px;
+	}
+	.border{
+		border: 5px solid #333;
+	}
+} 

@@ -10,7 +10,7 @@
 </head>
 <body>
 	<header>
-		<h1> Solution to {{num}}-Queens puzzle</h1>
+		<a href="{% url 'index'%}"><h1> Solution to {{num}}-Queens puzzle</h1></a>
 	</header>
 	<div class="grid-container">
 		<div class="border">
@@ -18,7 +18,7 @@
 		<div class="row">
 			{% for j in numrange %}
 				{% if forloop.counter0 == i %}
-					<div class="item dark" style='font-size:33px'>&#9819;</div>
+					<div class="item dark">&#9819;</div>
 				{% else %}
 					<div class="item"></div>
 				{% endif %}
@@ -27,6 +27,5 @@
 		{% endfor %}
 		</div>
 	</div>	
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </body>
 </html>
