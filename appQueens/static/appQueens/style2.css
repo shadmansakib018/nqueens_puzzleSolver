@@ -42,8 +42,8 @@ a{
 }
 @media only screen and (max-width: 600px) {
 	.item{
-		width: 30px;
-		height: 30px;
+		width: 35px;
+		height: 35px;
 	}
 	.dark{
 		border-radius: 2px;
